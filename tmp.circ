@@ -56,12 +56,13 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(1010,2660)" name="Tunnel">
-      <a name="label" val="op"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
+    <comp lib="0" loc="(1030,2350)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(1010,2720)" name="Tunnel">
-      <a name="label" val="op"/>
+    <comp lib="0" loc="(1030,2360)" name="Tunnel">
+      <a name="label" val="ov"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(1050,2450)" name="Tunnel">
@@ -69,22 +70,14 @@
       <a name="label" val="l3"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(1070,2340)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(1070,2350)" name="Tunnel">
-      <a name="label" val="ov"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
     <comp lib="0" loc="(1070,2450)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="r3"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(1080,2620)" name="Tunnel">
-      <a name="label" val="c2"/>
+    <comp lib="0" loc="(1080,2720)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="c3"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(1090,2450)" name="Tunnel">
@@ -103,6 +96,11 @@
     </comp>
     <comp lib="0" loc="(1100,2500)" name="Tunnel">
       <a name="label" val="c2"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(1100,2640)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="op"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(1130,2130)" name="Pin">
@@ -333,19 +331,40 @@
       <a name="label" val="o0"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(950,2670)" name="Tunnel">
+    <comp lib="0" loc="(890,2660)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="neg"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
-    <comp lib="0" loc="(950,2710)" name="Tunnel">
+    <comp lib="0" loc="(890,2700)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="ov"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(940,2650)" name="Tunnel">
+      <a name="label" val="op"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(940,2710)" name="Tunnel">
+      <a name="label" val="op"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(950,2680)" name="Tunnel">
+      <a name="label" val="c3"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(980,2080)" name="Clock"/>
     <comp lib="0" loc="(990,2080)" name="Tunnel">
       <a name="label" val="clk"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(990,2350)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(990,2360)" name="Tunnel">
+      <a name="label" val="neg"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="1" loc="(1030,2580)" name="AND Gate">
@@ -361,14 +380,12 @@
       <a name="inputs" val="3"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(1070,2680)" name="XOR Gate">
-      <a name="facing" val="south"/>
-      <a name="size" val="30"/>
-      <a name="xor" val="odd"/>
-    </comp>
     <comp lib="1" loc="(1080,2510)" name="XOR Gate">
       <a name="facing" val="south"/>
       <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(1080,2710)" name="XOR Gate">
+      <a name="facing" val="south"/>
     </comp>
     <comp lib="1" loc="(1090,2580)" name="AND Gate">
       <a name="facing" val="south"/>
@@ -461,11 +478,11 @@
       <a name="size" val="30"/>
       <a name="xor" val="odd"/>
     </comp>
-    <comp lib="1" loc="(960,2670)" name="AND Gate">
+    <comp lib="1" loc="(900,2660)" name="AND Gate">
       <a name="facing" val="west"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(960,2710)" name="AND Gate">
+    <comp lib="1" loc="(900,2700)" name="AND Gate">
       <a name="facing" val="west"/>
       <a name="negate1" val="true"/>
       <a name="size" val="30"/>
@@ -494,14 +511,11 @@
     <comp lib="4" loc="(1410,2220)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <wire from="(1000,2720)" to="(1010,2720)"/>
     <wire from="(1020,2520)" to="(1020,2550)"/>
     <wire from="(1020,2520)" to="(1050,2520)"/>
+    <wire from="(1030,2350)" to="(1030,2360)"/>
     <wire from="(1030,2580)" to="(1030,2590)"/>
     <wire from="(1030,2590)" to="(1050,2590)"/>
-    <wire from="(1030,2680)" to="(1030,2690)"/>
-    <wire from="(1030,2690)" to="(1030,2700)"/>
-    <wire from="(1030,2690)" to="(1070,2690)"/>
     <wire from="(1040,2530)" to="(1040,2550)"/>
     <wire from="(1040,2530)" to="(1080,2530)"/>
     <wire from="(1050,2450)" to="(1050,2520)"/>
@@ -509,24 +523,23 @@
     <wire from="(1050,2520)" to="(1140,2520)"/>
     <wire from="(1050,2590)" to="(1050,2600)"/>
     <wire from="(1060,2580)" to="(1060,2600)"/>
-    <wire from="(1060,2630)" to="(1060,2640)"/>
-    <wire from="(1070,2340)" to="(1070,2350)"/>
+    <wire from="(1060,2630)" to="(1060,2650)"/>
     <wire from="(1070,2450)" to="(1070,2470)"/>
     <wire from="(1070,2540)" to="(1070,2550)"/>
     <wire from="(1070,2540)" to="(1100,2540)"/>
     <wire from="(1070,2590)" to="(1070,2600)"/>
     <wire from="(1070,2590)" to="(1090,2590)"/>
-    <wire from="(1070,2680)" to="(1070,2690)"/>
     <wire from="(1080,2510)" to="(1080,2530)"/>
     <wire from="(1080,2530)" to="(1080,2550)"/>
     <wire from="(1080,2530)" to="(1130,2530)"/>
-    <wire from="(1080,2620)" to="(1080,2640)"/>
+    <wire from="(1080,2710)" to="(1080,2720)"/>
     <wire from="(1090,2450)" to="(1090,2470)"/>
     <wire from="(1090,2580)" to="(1090,2590)"/>
     <wire from="(1100,2340)" to="(1100,2350)"/>
     <wire from="(1100,2500)" to="(1100,2540)"/>
     <wire from="(1100,2540)" to="(1100,2550)"/>
     <wire from="(1100,2540)" to="(1120,2540)"/>
+    <wire from="(1100,2640)" to="(1100,2650)"/>
     <wire from="(1120,2540)" to="(1120,2550)"/>
     <wire from="(1130,2340)" to="(1130,2350)"/>
     <wire from="(1130,2530)" to="(1130,2550)"/>
@@ -623,11 +636,15 @@
     <wire from="(1550,2530)" to="(1550,2550)"/>
     <wire from="(1550,2590)" to="(1550,2600)"/>
     <wire from="(1560,2520)" to="(1560,2550)"/>
-    <wire from="(950,2670)" to="(960,2670)"/>
-    <wire from="(950,2710)" to="(960,2710)"/>
+    <wire from="(890,2660)" to="(900,2660)"/>
+    <wire from="(890,2700)" to="(900,2700)"/>
+    <wire from="(930,2650)" to="(940,2650)"/>
+    <wire from="(930,2670)" to="(940,2670)"/>
+    <wire from="(930,2690)" to="(940,2690)"/>
+    <wire from="(940,2670)" to="(940,2680)"/>
+    <wire from="(940,2680)" to="(940,2690)"/>
+    <wire from="(940,2680)" to="(950,2680)"/>
     <wire from="(980,2080)" to="(990,2080)"/>
-    <wire from="(990,2660)" to="(1010,2660)"/>
-    <wire from="(990,2680)" to="(1030,2680)"/>
-    <wire from="(990,2700)" to="(1030,2700)"/>
+    <wire from="(990,2350)" to="(990,2360)"/>
   </circuit>
 </project>
